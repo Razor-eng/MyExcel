@@ -52,7 +52,7 @@ export function ExcelSpreadsheet() {
 
       <SpreadsheetFormulaBar selectedCell={selectedCell} value={activeCellValue} onChange={handleFormulaChange} />
 
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 !overflow-hidden">
         <SpreadsheetGrid
           data={sortedData}
           sortConfig={sortConfig}
@@ -62,7 +62,7 @@ export function ExcelSpreadsheet() {
         />
       </div>
 
-      <SpreadsheetTabs />
+      {/* <SpreadsheetTabs /> */}
 
       <SpreadsheetStatusBar rowCount={data.length} selectedCell={selectedCell} />
     </div>
